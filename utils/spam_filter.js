@@ -20,7 +20,7 @@ class SpamFilter {
                     content: `New Lead Received. Message = ${message}`
                 }
             ],
-            model: "grok-beta", 
+            model: "grok-4-latest", 
             max_tokens: 500, 
             temperature: 0.1 
         };
