@@ -5,6 +5,7 @@ const router = express.Router()
 
 router.post("/spam-check", async(req,res)=> {
     const {message} = req.body;
+    console.log(`Payload received: \nmessage: ${message}\nrequest: ${req}`)
     try {
         const filter = new SpamFilter()
         const response = await filter.detectSpam(message)
